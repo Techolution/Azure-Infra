@@ -22,25 +22,25 @@
   {
       "apiVersion": "2015-06-15",
       "type": "Microsoft.Network/virtualNetworks",
-      "name": "[reference('linkedTemplate').parameters.vnetName]",
+      "name": "[reference('linkedTemplate').outputs.vnet.value]",
       "location": "[resourceGroup().location]",
       "properties": {
         "addressSpace": {
           "addressPrefixes": [
-            "[reference('linkedTemplate').parameters.vnetAddressPrefix]"
+            "[reference('linkedTemplate').outputs.vnetprefix.value]"
           ]
         },
         "subnets": [
           {
-            "name": "[reference('linkedTemplate').parameters.subnet1Name]",
+            "name": "[reference('linkedTemplate').outputs.sn1.value]",
             "properties": {
-              "addressPrefix": "[reference('linkedTemplate').parameters.subnet1Prefix]"
+              "addressPrefix": "[reference('linkedTemplate').outputs.sn1prefix.value]"
             }
           },
           {
-            "name": "[reference('linkedTemplate').parameters.subnet2Name]",
+            "name": "[reference('linkedTemplate').outputs.sn2.value]",
             "properties": {
-              "addressPrefix": "[reference('linkedTemplate').parameters.subnet2Prefix]"
+              "addressPrefix": "[reference('linkedTemplate').outputs.sn2prefix.value]"
             }
           }
         ]
