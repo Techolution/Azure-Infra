@@ -3,22 +3,46 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vnetName": {
-      "value": "rrs-dev-vnet"
+      "type": "string",
+      "defaultValue": "rrs-dev-vnet",
+      "metadata": {
+        "description": "Project RRS Virtual Network"
+      }
     },
     "vnetAddressPrefix": {
-      "value": "13.0.0.0/16"
-    },
-    "subnet1Name": {
-      "value": "rrs-dev-sn1"
+      "type": "string",
+      "defaultValue": "13.0.0.0/16",
+      "metadata": {
+        "description": "Project RRS Virtual Network Prefix"
+      }
     },
     "subnet1Prefix": {
-      "value": "13.0.0.0/24"
+      "type": "string",
+      "defaultValue": "13.0.0.0/24",
+      "metadata": {
+        "description": "Project RRS Virtual Network SubNet1 Prefix"
+      }
     },
-    "subnet2Name": {
-      "value": "rrs-dev-sn2"
+    "subnet1Name": {
+      "type": "string",
+      "defaultValue": "rrs-dev-sn1",
+      "metadata": {
+        "description": "Project RRS Virtual Network Subnet rrs-dev-sn1"
+      }
     },
     "subnet2Prefix": {
-      "value": "13.0.1.0/24"
+      "type": "string",
+      "defaultValue": "13.0.1.0/24",
+      "metadata": {
+        "description": "Subnet 2 Prefix"
+      }
+    },
+    "subnet2Name": {
+      "type": "string",
+      "defaultValue": "rrs-dev-sn2",
+      "metadata": {
+        "description": "Project RRS Virtual Network Subnet rrs-dev-sn2"
+      }
     }
   }
 }
