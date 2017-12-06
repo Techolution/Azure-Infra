@@ -13,7 +13,7 @@
       "type": "Microsoft.Resources/deployments",
       "properties": {
           "mode": "incremental",
-          "parametersLink": {
+          "templateLink": {
               "uri":"https://raw.githubusercontent.com/Techolution/Azure-Infra/master/azuredeploy.parameters.json",
               "contentVersion":"1.0.0.0"
            }
