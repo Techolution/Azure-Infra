@@ -14,7 +14,7 @@
       "properties": {
           "mode": "incremental",
           "parametersLink": {
-              "uri":"https://mystorageaccount.blob.core.windows.net/AzureTemplates/newStorageAccount.parameters.json",
+              "uri":"https://raw.githubusercontent.com/Techolution/Azure-Infra/master/azuredeploy.parameters.json",
               "contentVersion":"1.0.0.0"
            }
        }
