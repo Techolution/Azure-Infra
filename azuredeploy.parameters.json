@@ -44,5 +44,31 @@
         "description": "Project RRS Virtual Network Subnet rrs-dev-sn2"
       }
     }
-  }
+  },
+  "outputs": {
+      "vnet": {
+          "type": "object",
+          "value": "[reference(parameters('vnetName'))]"
+      },
+      "sn1prefix": {
+        "type": "object",
+        "value": "[reference(parameters('subnet1Prefix'))]"
+      },
+      "sn1": {
+        "type": "object",
+        "value": "[reference(parameters('subnet1Name'))]"
+      },
+      "vnetprefix": {
+          "type": "object",
+          "value": "[reference(parameters('vnetAddressPrefix'))]"
+      },
+      "sn2prefix": {
+        "type": "object",
+        "value": "[reference(parameters('subnet2Prefix')]"
+      },
+      "sn2": {
+        "type": "object",
+        "value": "[reference(parameters('subnet2Name'))]"
+      }
+    }
 }
