@@ -39,7 +39,7 @@
     },
     "subnet2Name": {
       "type": "string",
-      "defaultValue": "Subnet2",
+      "defaultValue": "rrs-dev-sn2",
       "metadata": {
         "description": "Project RRS Virtual Network Subnet rrs-dev-sn2 Name"
       }
